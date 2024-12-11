@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.shadow{
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.91);
+}
+.swiper-pagination-bullet-active {
+    background-color: white;
+  }
+  .swiper-container {
+    user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none; }
+   .swiper-slide img {
+      user-select: none;
+     -webkit-user-drag: none; }
