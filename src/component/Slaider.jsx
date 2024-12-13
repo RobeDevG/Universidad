@@ -11,7 +11,7 @@ import FondoHome_4 from "../assets/FondoHome_4.webp";
 
 function Slaider() {
   return (
-    <div>
+    <div className="border-b-8 border-[#FFC04A] w-full">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={1}

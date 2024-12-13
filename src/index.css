@@ -2,18 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.shadow{
-    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.91);
+.shadow {
+  text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.91);
 }
 .swiper-pagination-bullet-active {
-    background-color: white;
-  }
-  .swiper-container {
-    user-select: none;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none; }
-   .swiper-slide img {
-      user-select: none;
-     -webkit-user-drag: none; }
+  background-color: white;
+}
+.swiper-container {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.swiper-slide img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.on{
+  transition: all 0.8s ease;
+}
+.anime:hover > .on{
+    position: absolute;
+    bottom: 30px;
+}
+.elipce{
+  background-color: #CBCBCB;
+  clip-path: ellipse(50% 30% at 50% 50%);
+  width: 100px;
+  height: 32px;
+}
+.hover-2:hover> .animated-1{
+    rotate: 8deg;
+    scale: 1.05;
+}
+.hover-2:hover> .animated-2{
+  rotate: -5deg;
+  scale: 1.05;
+}
+.animated-1, .animated-2,.moodle-hover,.move1,.move2,.buho{
+  transition:  0.3s ease;
+}
+.moodle-container:hover > .moodle-hover{
+  scale: 1.1;
+}
+.buho-move:hover > .move1{
+  position: absolute;
+  left: -17px;
+}
+.buho-move:hover > .move2{
+  position: absolute;
+  right: -17px;
+}
+.buho-move:hover > .buho{
+  scale: 1.07;
+}
