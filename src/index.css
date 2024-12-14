@@ -18,41 +18,70 @@
   user-select: none;
   -webkit-user-drag: none;
 }
-.on{
+.on {
   transition: all 0.8s ease;
 }
-.anime:hover > .on{
-    position: absolute;
-    bottom: 30px;
+.anime:hover > .on {
+  position: absolute;
+  bottom: 30px;
 }
-.elipce{
-  background-color: #CBCBCB;
+.elipce {
+  background-color: #cbcbcb;
   clip-path: ellipse(50% 30% at 50% 50%);
   width: 100px;
   height: 32px;
 }
-.hover-2:hover> .animated-1{
-    rotate: 8deg;
-    scale: 1.05;
+.hover-2:hover > .animated-1 {
+  rotate: 8deg;
+  scale: 1.05;
 }
-.hover-2:hover> .animated-2{
+.hover-2:hover > .animated-2 {
   rotate: -5deg;
   scale: 1.05;
 }
-.animated-1, .animated-2,.moodle-hover,.move1,.move2,.buho{
-  transition:  0.3s ease;
+.animated-1,
+.animated-2,
+.moodle-hover,
+.move1,
+.move2,
+.buho {
+  transition: 0.3s ease;
 }
-.moodle-container:hover > .moodle-hover{
+.moodle-container:hover > .moodle-hover {
   scale: 1.1;
 }
-.buho-move:hover > .move1{
+.buho-move:hover > .move1 {
   position: absolute;
   left: -17px;
 }
-.buho-move:hover > .move2{
+.buho-move:hover > .move2 {
   position: absolute;
   right: -17px;
 }
-.buho-move:hover > .buho{
+.buho-move:hover > .buho {
   scale: 1.07;
+}
+.rein-container:hover > .rein-animated {
+  animation: rotateMove 1.2s forwards;
+  transition: all 1.2s;
+}
+.rein-animated {
+  transition: transform 1.2s;
+}
+@keyframes rotateMove {
+  0% {
+    transform: translateY(-2px);
+  }
+  33% {
+    transform: rotate(5deg) translateY(-4px);
+  }
+  66% {
+    transform: rotate(-5deg) translateY(-4px);
+  }
+  88% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
 }

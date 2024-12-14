@@ -10,6 +10,8 @@ import Moodle from '../assets/Icons/Moodle.png'
 import Buho from '../assets/Icons/Buho.png'
 import ala1 from '../assets/Icons/ala1.png'
 import ala2 from '../assets/Icons/ala2.png'
+import Rein from '../assets/Icons/Rein.png'
+import Rein_animado from '../assets/Icons/Rein_animado.png'
 
 function Home() {
   return (
@@ -62,11 +64,12 @@ function Home() {
             </div>
             <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base text-center max-w-52 -translate-y-2">Centro de informacion cientifico tecnico</p>
           </div>
-          <div>
-            <div>
-              <img src="" alt="" />
+          <div className="flex flex-col items-center h-44 justify-between">
+            <div className="relative rein-container">
+              <img src={Rein}alt="" />
+              <img className="absolute left-5 bottom-16 rein-animated" src={Rein_animado}alt="" />
             </div>
-            <p>lorem*5</p>
+            <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base text-center ">Repositorio Institucional</p>
           </div>
         </div>
       </section>
