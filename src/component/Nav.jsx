@@ -1,38 +1,89 @@
-import logo from '../assets/logo.png'
-import Facebook from '../assets/Facebook.svg'
-import Twitter from '../assets/Twitter.svg'
-import Youtube from '../assets/Youtube.svg'
-import Telegram from '../assets/Telegram.svg'
+import logo from "../assets/logo.png";
+import Facebook from "../assets/Facebook.svg";
+import Twitter from "../assets/Twitter.svg";
+import Youtube from "../assets/Youtube.svg";
+import Telegram from "../assets/Telegram.svg";
+import { useState } from "react";
 
 function Nav() {
+  const [style, setStyle] = useState({
+    left: "-3rem",
+    width: "10rem",
+    position: "absolute",
+    transition: "all 0.4s ease",
+  });
+  const handleMouseEnter1 = () => {
+    setStyle({
+      ...style,
+      left: "-3rem",
+      width: "10rem",
+    });
+  };
+  const handleMouseEnter2 = () => {
+    setStyle({
+      ...style,
+      left: "105px",
+      width: "10rem",
+    });
+  };
+  const handleMouseEnter3 = () => {
+    setStyle({
+      ...style,
+      left: "265px",
+      width: "10rem",
+    });
+  };
+  const handleMouseEnter4 = () => {
+    setStyle({
+      ...style,
+      left: "420px",
+      width: "16rem",
+    });
+  };
+
   return (
-    <nav className='flex p-2 pb-4 w-full gap-10 bg-[#0094CA] justify-between'>
+    <nav className="relative flex p-2 pb-4 w-full gap-8 bg-[#0094CA] justify-between">
       <div>
-        <img loading='lazy' src={logo} alt="" />
+        <img className="relative z-10" loading="lazy" src={logo} alt="" />
       </div>
-      <div className='flex items-center  gap-12'>
-        <a href="">PORTADA</a>
-        <a href="">INSTITUCION</a>
-        <a href="">FORMACION</a>
-        <a href="">INTERNACIONALIZACION</a>
+      <div className="flex items-center gap-16 relative">
+        <a className="z-10 observer-1" href="" onMouseEnter={handleMouseEnter1}>
+          PORTADA
+        </a>
+        <a className="z-10 observer-2" href="" onMouseEnter={handleMouseEnter2}>
+          INSTITUCION
+        </a>
+        <a className="z-10 observer-3" href="" onMouseEnter={handleMouseEnter3}>
+          FORMACION
+        </a>
+        <a className="z-10 observer-4" href="" onMouseEnter={handleMouseEnter4}>
+          INTERNACIONALIZACION
+        </a>
+        <div
+          style={style}
+          className="observer-hover bg-[#5AA1FF] h-24 p-4 rounded-t-[50px]"
+        >
+          <div className="h-16 w-full rounded-[50px] bg-[#FF831D]"></div>
+        </div>
       </div>
-      <div className='flex flex-col justify-center gap-2 items-center'>
-        <input type="search" placeholder='buscar...' name="" id="" />
-        <div className='flex items-center gap-2'>
+      <div className="flex flex-col justify-center gap-2 items-center">
+        <input type="search" placeholder="buscar..." name="" id="" />
+        <div className="flex items-center gap-2">
           <a href="">
-            <img loading='lazy' src={Facebook} alt="" />
+            <img loading="lazy" src={Facebook} alt="" />
           </a>
           <a href="">
-            <img loading='lazy' src={Twitter} alt="" />
+            <img loading="lazy" src={Twitter} alt="" />
           </a>
           <a href="">
-            <img loading='lazy' src={Youtube} alt="" />
+            <img loading="lazy" src={Youtube} alt="" />
           </a>
           <a href="">
-            <img loading='lazy' src={Telegram} alt="" />
+            <img loading="lazy" src={Telegram} alt="" />
           </a>
         </div>
       </div>
+      <div className="absolute bg-[#5AA1FF] w-full bottom-0 left-0 h-8"></div>
     </nav>
   );
 }
