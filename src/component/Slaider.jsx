@@ -26,19 +26,19 @@ function Slaider() {
         freeMode={true}
       >
         <SwiperSlide>
-          <img src={FondoHome} alt="img" loading="lazy" title="imagen" />
+          <img className="w-full" src={FondoHome} alt="img" loading="lazy" title="imagen" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={FondoHome_1} alt="img" loading="lazy" title="imagen" />
+          <img className="w-full" src={FondoHome_1} alt="img" loading="lazy" title="imagen" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={FondoHome_2} alt="img" loading="lazy" title="imagen" />
+          <img className="w-full" src={FondoHome_2} alt="img" loading="lazy" title="imagen" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={FondoHome_3} alt="img" loading="lazy" title="imagen" />
+          <img className="w-full" src={FondoHome_3} alt="img" loading="lazy" title="imagen" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={FondoHome_4} alt="img" loading="lazy" title="imagen" />
+          <img className="w-full" src={FondoHome_4} alt="img" loading="lazy" title="imagen" />
         </SwiperSlide>
 
         <div className="absolute left-10 bottom-5 z-10 text-white">
