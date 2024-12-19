@@ -9,9 +9,9 @@ const array = [
 
 function Notice() {
   return (
-    <section>
-      <h1>Noticias</h1>
-      <a href="">Metacompu 2024 Convocatoria</a>
+    <section className="flex flex-col items-center ">
+      <h1 className="mt-12 mb-12 pl-2 pr-2 border-b-2 border-[#FFC04A]">Noticias</h1>
+      <a className="mb-12 text-[#0094CA]" href="">Metacompu 2024 Convocatoria</a>
       <div>
         {array.map((element, i) => {
           return (
