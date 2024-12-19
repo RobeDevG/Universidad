@@ -66,8 +66,8 @@ function Nav() {
           <div className="h-16 w-full rounded-[50px] bg-[#FF831D]"></div>
         </div>
       </div>
-      <div className="flex flex-col justify-center gap-2 items-center">
-        <input type="search" placeholder="buscar..." name="" id="" />
+      <div className="flex flex-col justify-center gap-2 items-center mr-8 ">
+        <input className="rounded-3xl bg-[#426CA9] shadow-input p-1" type="search" placeholder="buscar..." name="" id="" />
         <div className="flex items-center gap-2">
           <a href="">
             <img loading="lazy" src={Facebook} alt="" />
