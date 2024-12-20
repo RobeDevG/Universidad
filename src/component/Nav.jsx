@@ -7,36 +7,36 @@ import { useState } from "react";
 
 function Nav() {
   const [style, setStyle] = useState({
-    left: "-3rem",
+    left: "-45px",
     width: "10rem",
     position: "absolute",
-    transition: "all 0.4s ease",
+    transition: "all 0.3s ease",
   });
   const handleMouseEnter1 = () => {
     setStyle({
       ...style,
-      left: "-3rem",
+      left: "-45px",
       width: "10rem",
     });
   };
   const handleMouseEnter2 = () => {
     setStyle({
       ...style,
-      left: "105px",
+      left: "110px",
       width: "10rem",
     });
   };
   const handleMouseEnter3 = () => {
     setStyle({
       ...style,
-      left: "265px",
+      left: "270px",
       width: "10rem",
     });
   };
   const handleMouseEnter4 = () => {
     setStyle({
       ...style,
-      left: "420px",
+      left: "435px",
       width: "16rem",
     });
   };
@@ -47,16 +47,16 @@ function Nav() {
         <img className="relative z-10" loading="lazy" src={logo} alt="" />
       </div>
       <div className="flex items-center gap-16 relative">
-        <a className="z-10 observer-1 pt-5 pb-5 text-center " href="" onMouseEnter={handleMouseEnter1}>
+        <a className="z-10 observer-1 pt-5 pb-5 text-center font-custom-font" href="" onMouseEnter={handleMouseEnter1}>
           PORTADA
         </a>
-        <a className="z-10 observer-2 pt-5 pb-5 text-center" href="" onMouseEnter={handleMouseEnter2}>
+        <a className="z-10 observer-2 pt-5 pb-5 text-center font-custom-font" href="" onMouseEnter={handleMouseEnter2}>
           INSTITUCION
         </a>
-        <a className="z-10 observer-3 pt-5 pb-5 text-center" href="" onMouseEnter={handleMouseEnter3}>
+        <a className="z-10 observer-3 pt-5 pb-5 text-center font-custom-font" href="" onMouseEnter={handleMouseEnter3}>
           FORMACION
         </a>
-        <a className="z-10 observer-4 pt-5 pb-5 text-center" href="" onMouseEnter={handleMouseEnter4}>
+        <a className="z-10 observer-4 pt-5 pb-5 text-center font-custom-font" href="" onMouseEnter={handleMouseEnter4}>
           INTERNACIONALIZACION
         </a>
         <div

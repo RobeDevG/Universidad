@@ -15,7 +15,7 @@ import Rein_animado from '../assets/Icons/Rein_animado.png'
 function Services() {
   return (
     <section className="flex text-center flex-col justify-center items-center border-b-8 border-[#FFC04A] pb-16">
-    <h1 className="text-3xl mt-4 mb-16 border-b-2 border-[#FFC04A]">SERVICIOS</h1>
+    <h1 className="text-3xl mt-4 mb-16 border-b-2 border-[#FFC04A] font-custom-font">SERVICIOS</h1>
     <div className="flex flex-wrap items-center justify-around w-full gap-6">
       <div className="flex flex-col items-center  h-44 justify-between">
         <div className="anime relative z-10 mb-10">
@@ -26,7 +26,7 @@ function Services() {
           <div className="elipce absolute -bottom-8 left-1 -z-10"></div>
         </div>
         
-        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base">Correo de Profesores</p>
+        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base font-custom-font">Correo de Profesores</p>
       </div>
       <div className="flex flex-col items-center  h-44 justify-between">
         <div className="anime relative mb-14">
@@ -36,7 +36,7 @@ function Services() {
           <img className="absolute -bottom-5 -right-[12px]" src={Sub2} alt="" />
           <div className="elipce absolute -bottom-8 left-1 -z-10"></div>
         </div>
-        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base">Correo de Alumnos</p>
+        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base font-custom-font">Correo de Alumnos</p>
       </div>
       <div className="flex flex-col items-center  h-44 justify-between">
         <div className="flex hover-2 items-center justify-center relative pl-4 pb-5 pt-0 mb-6">
@@ -44,14 +44,14 @@ function Services() {
           <img className="animated-2" src={Chat1} alt="" />
           <div className="elipce absolute -bottom-4 left-0 -z-10"></div>
         </div>
-        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base">Chat Institucional</p>
+        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base font-custom-font">Chat Institucional</p>
       </div>
       <div className="flex flex-col items-center h-44 justify-between">
         <div className="relative flex items-center moodle-container ">
           <img className="-translate-y-4 moodle-hover" src={Moodle} alt="" />
           <div className="elipce absolute bottom-8 left-12 -z-10"></div>
         </div>
-        <p className="border-b-2 pl-1 pr-1 -translate-y-6 border-[#FFC04A] text-base text-center max-w-52">Entorno vitual de aprendizaje</p>
+        <p className="border-b-2 pl-1 pr-1 -translate-y-6 border-[#FFC04A] text-base text-center max-w-52 font-custom-font">Entorno vitual de aprendizaje</p>
       </div>
       <div className="flex flex-col items-center  h-44 justify-between">
         <div className="relative buho-move">
@@ -59,14 +59,14 @@ function Services() {
           <img className="absolute bottom-12 left-2 move1" src={ala1} alt="" />
           <img className="absolute bottom-12 right-2 move2" src={ala2} alt="" />
         </div>
-        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base text-center max-w-52 -translate-y-2">Centro de informacion cientifico tecnico</p>
+        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base text-center max-w-52 -translate-y-2 font-custom-font">Centro de informacion cientifico tecnico</p>
       </div>
       <div className="flex flex-col items-center h-44 justify-between">
         <div className="relative rein-container">
           <img src={Rein}alt="" />
           <img className="absolute left-5 bottom-16 rein-animated" src={Rein_animado}alt="" />
         </div>
-        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base text-center ">Repositorio Institucional</p>
+        <p className="border-b-2 pl-1 pr-1 border-[#FFC04A] text-base text-center font-custom-font">Repositorio Institucional</p>
       </div>
     </div>
   </section>

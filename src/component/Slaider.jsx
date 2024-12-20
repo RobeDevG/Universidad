@@ -10,6 +10,7 @@ import FondoHome_3 from "../assets/FondoHome_3.webp";
 import FondoHome_4 from "../assets/FondoHome_4.webp";
 
 function Slaider() {
+
   return (
     <div className="border-b-8 border-[#FFC04A] w-full">
       <Swiper
@@ -42,8 +43,8 @@ function Slaider() {
         </SwiperSlide>
 
         <div className="absolute left-10 bottom-5 z-10 text-white">
-          <h1 className="text-6xl shadow select-none">Ciudad de los saberes</h1>
-          <h2 className="text-4xl shadow select-none">
+          <h1 className="text-6xl shadow select-none font-custom-font">Ciudad de los saberes</h1>
+          <h2 className="text-4xl shadow select-none font-custom-font">
             Pensar como Universidad
           </h2>
         </div>
